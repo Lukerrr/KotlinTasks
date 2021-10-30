@@ -21,7 +21,7 @@ class ImageManager {
     private var image: Image? = null
 
     /** An image counter */
-    private var imageid: Int = 0
+    private var imageId: Int = 0
 
     public fun captureScreen() {
         try {
@@ -38,7 +38,7 @@ class ImageManager {
     private fun updateImage(img: Image) {
         if (img != null) {
             image = img
-            ++imageid
+            ++imageId
             onImageUpdated?.invoke(image!!)
         }
     }
@@ -57,7 +57,7 @@ class ImageManager {
     }
 
     public fun getImageId(): Int {
-        return imageid
+        return imageId
     }
 
     public fun hasImage() : Boolean {

@@ -50,8 +50,8 @@
          <children>
             <Text layoutX="10.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controls:" wrappingWidth="186.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
             <Text layoutX="10.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift+S - Capture" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="30.0" />
-            <Text layoutX="10.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ctrl+S - Fast save" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="50.0" />
-            <Text layoutX="10.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ctrl+Alt+S - Save As" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="70.0" />
+            <Text layoutX="10.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ctrl+S - Save As" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="50.0" />
+            <Text layoutX="10.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ctrl+Alt+S - Fast save" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="70.0" />
             <Text layoutX="15.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LMB - Draw" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="90.0" />
             <Text layoutX="15.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RMB - Erase" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="110.0" />
             <Text layoutX="15.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift+LMB - Move crop" wrappingWidth="186.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="130.0" />
