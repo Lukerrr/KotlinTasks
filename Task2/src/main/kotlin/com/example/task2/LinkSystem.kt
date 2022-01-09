@@ -250,7 +250,7 @@ class LinkSystem {
             curve.fill = Color.TRANSPARENT
             curve.stroke = link1.valueType.color
             curve.strokeWidth = LINKAGE_STROKE_WIDTH
-            curve.viewOrder = -1.0
+            curve.viewOrder = 1.0
 
             link1.node.getParentPane().children.add(curve)
 
