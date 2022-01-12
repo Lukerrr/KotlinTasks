@@ -19,19 +19,15 @@ class FloatNodeController : NodeController() {
     override fun initNode() {
         linkDefOutFloat = LinkDef(this, outLinkFloat, "Output Float", LinkType.OUT, LinkValueType.FLOAT)
 
-        textFieldInput.textProperty().addListener { _: ObservableValue<out String>, oldValue: String, newValue: String ->
-            if (newValue.toFloatOrNull() == null) {
-                textFieldInput.text = oldValue
-            } else {
-                updateState()
-            }
+        textFieldInput.textProperty().addListener { _: ObservableValue<out String>, _: String, _: String ->
+            updateState()
         }
 
         super.initNode()
     }
 
     fun getFloat() : Float {
-        return textFieldInput.text.toFloat()
+        return textFieldInput.text.toFloatOrNull() ?: 0.0f
     }
 
     override fun getLinks(): Array<LinkDef> {

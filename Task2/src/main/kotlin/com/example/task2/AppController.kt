@@ -211,9 +211,11 @@ class AppController {
             for (link in node.getLinks()) {
                 if (link.type == LinkType.OUT) {
                     val otherLink = LinkSystem.findLinkage(link)
-                    var otherNodeId = spawnedNodes.indexOf(otherLink!!.node)
-                    var otherLinkId = otherLink!!.node.getLinks().indexOf(otherLink)
-                    linksData.add(arrayOf(nodeId, linkId, otherNodeId, otherLinkId))
+                    if (otherLink != null) {
+                        var otherNodeId = spawnedNodes.indexOf(otherLink!!.node)
+                        var otherLinkId = otherLink!!.node.getLinks().indexOf(otherLink)
+                        linksData.add(arrayOf(nodeId, linkId, otherNodeId, otherLinkId))
+                    }
                 }
                 ++linkId
             }

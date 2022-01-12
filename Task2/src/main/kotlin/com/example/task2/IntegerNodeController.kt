@@ -19,19 +19,15 @@ class IntegerNodeController : NodeController() {
     override fun initNode() {
         linkDefOutInt = LinkDef(this, outLinkInt, "Output Integer", LinkType.OUT, LinkValueType.INTEGER)
 
-        textFieldInput.textProperty().addListener { _: ObservableValue<out String>, oldValue: String, newValue: String ->
-            if (newValue.toIntOrNull() == null) {
-                textFieldInput.text = oldValue
-            } else {
-                updateState()
-            }
+        textFieldInput.textProperty().addListener { _: ObservableValue<out String>, _: String, _: String ->
+            updateState()
         }
 
         super.initNode()
     }
 
     fun getInteger() : Int {
-        return textFieldInput.text.toInt()
+        return textFieldInput.text.toIntOrNull() ?: 0
     }
 
     override fun getLinks(): Array<LinkDef> {
